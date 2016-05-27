@@ -2,18 +2,18 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "Launch localhost with sourcemaps",
+            "name": "Attach to Chrome with sourcemaps",
             "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost/mypage.html",
-            "webRoot": "${workspaceRoot}/app/files",
+            "request": "attach",
+            "port": 9222,
             "sourceMaps": true
         },
         {
-            "name": "Launch index.html (without sourcemaps)",
+            "name": "Attach to Chrome from file index.html",
             "type": "chrome",
-            "request": "launch",
-            "file": "${workspaceRoot}/index.html"
-        },
+            "request": "attach",
+            "port": 9222,
+            "webRoot": "${workspaceRoot}/index.html"
+        }
     ]
 }
